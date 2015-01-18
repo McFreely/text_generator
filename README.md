@@ -1,6 +1,7 @@
 # TextGenerator
 
-TODO: Write a gem description
+A gem to automatically generate text, using various schemes.
+At the moment, the only scheme available is a Markov-like algorithm, but more are to come soon.
 
 ## Installation
 
@@ -20,15 +21,15 @@ Or install it yourself as:
 
 ## Usage
 
-At the moment, the only scheme available to generate text is a markov-like algorithm.
+### Markov Generator
 Three simple steps: 
 
-First you need to initiate a new generator.
+First you need to initiate a new generator. The default values are an ngram of size 1 and a maximum length of text generated of 15 words. Play with those value to get the best results depending on your source text.
 ```ruby
 generator = MarkovGenerator.new(n = 1, genmax = 15)
 ```
 
-Second you need to feed the generator some text for it to be able to output something in the next step.
+Second you need to feed the generator some source text for it to be able to output something original later.
 ```ruby
 generator.feed(line)
 ```
