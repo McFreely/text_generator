@@ -1,6 +1,5 @@
 require "text_generator/version"
 
-
 class MarkovGenerator
   attr_accessor :ngrams, :beginnings, :genmax
   
