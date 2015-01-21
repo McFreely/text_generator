@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["paulmcfreely@gmail.com"]
   spec.summary       = %q{A gem to automatically generate text, using various schemas}
   spec.description   = %q{A gem to generate text. At the moment, the only method available is a Markov Model Generator, but more are to come later.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/McFreely/text_generator"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
